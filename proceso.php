@@ -3,6 +3,7 @@ session_start();
 require('./config.php');
 if(isset($_POST['btnCurricular']))
 {
+
     // Variables de la peticion POST
     $periodo = $_POST['cbxPeriodo'];
     $curricular = 0;
@@ -19,8 +20,10 @@ if(isset($_POST['btnCurricular']))
     
     if(isset($_POST['cbxEspecial']) && isset($_POST['tbxEspecial']))
     {
+
         $especial = $_POST['cbxEspecial'];
         $especificacion = $_POST['tbxEspecial'];
+
     }
     
     // Procesamiento de los datos
